@@ -1,2 +1,4 @@
-# azure-functions-image-thumbnail
-Generate image thumbnail using azure functions
+# Azure Functions Image Thumbnail 
+
+## Explanation
+This demo is part of a course Azure Functions Masterclass on [Cloudshikshak.com](https://cloudshikshak.com)
