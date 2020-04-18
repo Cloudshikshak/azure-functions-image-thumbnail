@@ -12,9 +12,9 @@ namespace Cloudshikshak.Function
     public static class BlobTriggerCSharp
     {
         [FunctionName("BlobTriggerCSharp")]
-        public static void Run([BlobTrigger("image-input/{name}", Connection = "<<STORAGE_ACCOUNT_CONNECTION_STRING>>")]Stream inBlob, 
+        public static void Run([BlobTrigger("image-input/{name}", Connection = "STORAGE_ACCOUNT_CONNECTION_STRING")]Stream inBlob, 
         string name,
-        [Blob("image-output/thumbnail-{name}", FileAccess.Write, Connection = "<<STORAGE_ACCOUNT_CONNECTION_STRING>>")] Stream outBlob,
+        [Blob("image-output/thumbnail-{name}", FileAccess.Write, Connection = "STORAGE_ACCOUNT_CONNECTION_STRING")] Stream outBlob,
         ILogger log)
         {
             log.LogInformation($"New image uploaded in image-input container: {name}");
